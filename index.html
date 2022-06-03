@@ -4,148 +4,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP ME AUXILIOU COM A TAG NAV, MAS É NOVO PRA MIM-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Site daora demais</title>
-</head>
+    <link rel="shortcut icon" href="favicon.ico/favicon.ico" type="image/x-icon"> <!-- Colocado tag favicon-->
+    <title>Biomas do Nosso Brasil</title>
+</head><!--REFATURAR NÃO É TÃO SIMPLES, EU AINDA NÃO CONSEGUI COMPREENDER BEM TUDO QUE FOI FEITO, ESTÁ MEIO BAGUNÇADO AO MEU VER, PORÉM É UM BOM DESAFIO, OBRIGADO!-->
 
-<body>
+<body>      
     <header>
-        <nav class="container-nav w-100 align-content-center",>
+        <nav class="container-nav w-100 align-content-center" ,>
             <h1>Biomas Brasileiros</h1>
             <div class="portfolio-contact-container">
-                <img src="img/github.svg" alt="Github">
-                <a href="https://github.com/25ribeiro"> Potifóliodosbiomas</a>
+                <a id="contact" href="https://github.com/25ribeiro"><img src="img/github.svg" alt="github"></a>
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-ribeiro-455949231/"><img src="img/icone-linkedin.png"
+                            alt="linkedin"></a>
             </div>
         </nav>
     </header>
-    <section id="presentation">
-        <div class="presentation container">
-            <div>
-                <h1><span>Bem Vindo</span></h1>
-                <h1><span>Conheça os Biomas do</span></h1>
-                <h1><span>BRASIL</span></h1> <!-- a tag span foi trazida para dentro do h1 para poder mudar o estilo -->
-                <a href="#portfolio" type="button" class="cta">Portifólio</a>
-            </div>
-        </div>
-    </section>
-    <section id="portfolio">
-        <div class="portfolio container">
-            <div class="portfolio header">
-                <h1 class="section-title"><span>Portifólio</span></h1>
-            </div>
-            <div class="all-projects">
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Bioma Amazônia</h1>
-                        <h2> MAIOR FLORESTA TROPICAL DO MUNDO</h2>
-                        <p>A Amazônia é quase mítica: um verde e vasto mundo de águas e florestas, onde as copas de
-                            árvores imensas escondem o úmido nascimento, reprodução e morte de mais de um-terço das
-                            espécies que vivem sobre a Terra. A bacia amazônica é a maior bacia hidrográfica do mundo:
-                            cobre cerca de 6 milhões de km2 e e
-                            tem 1.100 afluentes. Seu principal rio, o Amazonas, corta a região para desaguar no Oceano
-                            Atlântico, lançando ao mar cerca de 175 milhões de litros d’água a cada segundo. A floresta
-                            vive a partir de seu próprio material orgânico, e seu delicado equilíbrio é extremamente
-                            sensível a quaisquer interferências.</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="img/amazonia.jfif" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Bioma Caatinga</h1>
-                        <h2>ÚNICO BIOMA 100% BRASILEIRO</h2>
-                        <p>Rico em biodiversidade, o bioma abriga 178 espécies de mamíferos, 591 de aves, 177 de
-                            répteis, 79 espécies de anfíbios, 241 de peixes e 221 abelhas. Cerca de 27 milhões de
-                            pessoas vivem na região, a maioria carente e dependente dos recursos do bioma para
-                            sobreviver. A caatinga tem um imenso potencial para a conservação de serviços ambientais,
-                            uso sustentável e bioprospecção que, se bem explorado, será decisivo para o desenvolvimento
-                            da região e do país. A biodiversidade da caatinga ampara diversas atividades econômicas
-                            voltadas para fins agrosilvopastoris e industriais, especialmente nos ramos farmacêutico, de
-                            cosméticos, químico e de alimentos.</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="img/caatinga-bioma.jpg" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Bioma Cerrado</h1>
-                        <h2>Savana mais rica do mundo em biodiversidade</h2>
-                        <p>Abrigando 11.627 espécies de plantas nativas já catalogadas. Existe uma grande diversidade de
-                            habitats, que determinam uma notável alternância de espécies entre diferentes
-                            fitofisionomias. Considerado como um hotspots mundiais de biodiversidade, o Cerrado
-                            apresenta extrema abundância de espécies endêmicas e sofre uma excepcional perda de habitat.
-                            Além dos aspectos ambientais, o Cerrado tem grande importância social. Muitas populações
-                            sobrevivem de seus recursos naturais, incluindo etnias indígenas, quilombolas, geraizeiros,
-                            ribeirinhos, babaçueiras, vazanteiros e comunidades quilombolas que, juntas, fazem parte do
-                            patrimônio histórico e cultural brasileiro, e detêm um conhecimento tradicional de sua
-                            biodiversidade.
-                        </p>
-                    </div>
-                    <div class="project-img">
-                        <img src="img/cerraado.jfif" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Bioma Mata Atlantica</h1>
-                        <h2>A Mata Atlântica é composta por formações florestais nativas e ecossistemas associados</h2>
-                        <p>Além de ser uma das regiões mais ricas do mundo em biodiversidade, a Mata Atlântica fornece
-                            serviços ecossistêmicos essenciais para os 145 milhões de brasileiros que vivem nela.
-                            As florestas e demais ecossistemas que compõem a Mata Atlântica são responsáveis pela
-                            produção, regulação e abastecimento de água; regulação e equilíbrio climáticos; proteção de
-                            encostas e atenuação de desastres; fertilidade e proteção do solo; produção de alimentos,
-                            madeira, fibras, óleos e remédios; além de proporcionar paisagens cênicas e preservar um
-                            patrimônio histórico e cultural imenso.</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="img/mata-atlantica.jpg" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Bioma Pantanal</h1>
-                        <h2>maior planície de inundação contínua do Planeta Terra</h2>
-                        <p>O bioma Pantanal é considerado uma das maiores extensões úmidas contínuas do planeta. Este
-                            bioma continental é
-                            considerado o de menor extensão territorial no Brasil, entretanto este dado em nada
-                            desmerece a exuberante riqueza que o
-                            referente bioma abriga. A sua área aproximada é 150.355 km² (IBGE,2004), ocupando assim
-                            1,76% da área total do
-                            território brasileiro. Em seu espaço territorial o bioma, que é uma planície aluvial, é
-                            influenciado por rios que drenam
-                            a bacia do Alto Paraguai.</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="img/pantanal.png" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Bioma Pampa</h1>
-                        <h2>ocupa aproximadamente 2% do Território Nacional</h2>
-                        <p>O Pampa está restrito ao estado do Rio Grande do Sul. O Pampa é uma das áreas de campos
-                            temperados mais importantes do planeta. or ser um conjunto de ecossistemas muito antigos, o
-                            Pampa apresenta flora e fauna próprias e grande biodiversidade, ainda não completamente
-                            descrita pela ciência. O bioma exibe um imenso patrimônio cultural
-                            associado à biodiversidade. Em sua paisagem predominam os campos, entremeados por capões de
-                            mata, matas ciliares e banhados.
-                            A estrutura da vegetação dos campos – se comparada à das florestas e das savanas – é mais
-                            simples e menos exuberante, mas não menos relevante do ponto de vista da biodiversidade e
-                            dos serviços ambientais.</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="img/pampa.jpg" alt="img">
-                    </div>
+    <main><!-- inclusão da tag -->
+        <section id="presentation"> 
+            <div class="presentation container">
+                <div>
+                    <h1><span>Biomas</span></h1>
+                    <h1><span> do</span></h1>
+                    <h1><span>BRASIL</span></h1>
+                    <!-- a tag span foi trazida para dentro do h1 para poder mudar o estilo -->
+                    <a href="#portfolio" type="button" class="cta">conheça</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-   
+        </section>
+        <section id="portfolio">
+            <section class="portfolio-container">
+                <div class="portfolio-header">
+                    <h1 class="section-title"><span>OS BIOMAS BRASILEIROS</span></h1>
+                </div>
+                <div class="all-projects">
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Bioma Amazônia</h1>
+                            <h2><a href="https://antigo.mma.gov.br/biomas/amaz%C3%B4nia">MAIOR FLORESTA TROPICAL DO
+                                    MUNDO</a></h2>
+                            <p><q>A Amazônia é quase mítica: um verde e vasto mundo de águas e florestas, onde as copas
+                                    de
+                                    árvores imensas escondem o úmido nascimento, reprodução e morte de mais de um-terço
+                                    das
+                                    espécies que vivem sobre a Terra. A bacia amazônica é a maior bacia hidrográfica do
+                                    mundo:
+                                    cobre cerca de 6 milhões de km2 e e
+                                    tem 1.100 afluentes. Seu principal rio, o Amazonas, corta a região para desaguar no
+                                    Oceano
+                                    Atlântico, lançando ao mar cerca de 175 milhões de litros d’água a cada segundo. A
+                                    floresta
+                                    vive a partir de seu próprio material orgânico, e seu delicado equilíbrio é
+                                    extremamente
+                                    sensível a quaisquer interferências.</q></p>
+                        </div>
+                        <div class="project-img">
+                            <img src="img/amazonia.jfif" alt="img">
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Bioma Caatinga</h1>
+                            <h2><a href="https://antigo.mma.gov.br/biomas/caatinga.html">ÚNICO BIOMA 100% BRASILEIRO</a>
+                            </h2>
+                            <p><q>Rico em biodiversidade, o bioma abriga 178 espécies de mamíferos, 591 de aves, 177 de
+                                    répteis, 79 espécies de anfíbios, 241 de peixes e 221 abelhas. Cerca de 27 milhões
+                                    de
+                                    pessoas vivem na região, a maioria carente e dependente dos recursos do bioma para
+                                    sobreviver. A caatinga tem um imenso potencial para a conservação de serviços
+                                    ambientais,
+                                    uso sustentável e bioprospecção que, se bem explorado, será decisivo para o
+                                    desenvolvimento
+                                    da região e do país. A biodiversidade da caatinga ampara diversas atividades
+                                    econômicas
+                                    voltadas para fins agrosilvopastoris e industriais, especialmente nos ramos
+                                    farmacêutico, de
+                                    cosméticos, químico e de alimentos.</q></p>
+                        </div>
+                        <div class="project-img">
+                            <img src="img/caatinga-bioma.jpg" alt="img">
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Bioma Cerrado</h1>
+                            <h2><a href="https://antigo.mma.gov.br/biomas/cerrado.html">SAVANA MAIS RICA DO MUNDO EM
+                                    BIODIVERSIDADE</a></h2>
+                            <p><q>Abrigando 11.627 espécies de plantas nativas já catalogadas. Existe uma grande
+                                    diversidade de
+                                    habitats, que determinam uma notável alternância de espécies entre diferentes
+                                    fitofisionomias. Considerado como um hotspots mundiais de biodiversidade, o Cerrado
+                                    apresenta extrema abundância de espécies endêmicas e sofre uma excepcional perda de
+                                    habitat.
+                                    Além dos aspectos ambientais, o Cerrado tem grande importância social. Muitas
+                                    populações
+                                    sobrevivem de seus recursos naturais, incluindo etnias indígenas, quilombolas,
+                                    geraizeiros,
+                                    ribeirinhos, babaçueiras, vazanteiros e comunidades quilombolas que, juntas, fazem
+                                    parte do
+                                    patrimônio histórico e cultural brasileiro, e detêm um conhecimento tradicional de
+                                    sua
+                                    biodiversidade.</q></p>
+                        </div>
+                        <div class="project-img">
+                            <img src="img/cerraado.jfif" alt="img">
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Bioma Mata Atlantica</h1>
+                            <h2><a href="https://antigo.mma.gov.br/biomas/mata-atl%C3%A2ntica_emdesenvolvimento.html">27
+                                    DE MAIO DIA NACIONAL DA MATA ATLÂNTICA</a></h2>
+                            <p><q>Além de ser uma das regiões mais ricas do mundo em biodiversidade, a Mata Atlântica
+                                    fornece
+                                    serviços ecossistêmicos essenciais para os 145 milhões de brasileiros que vivem
+                                    nela.
+                                    As florestas e demais ecossistemas que compõem a Mata Atlântica são responsáveis
+                                    pela
+                                    produção, regulação e abastecimento de água; regulação e equilíbrio climáticos;
+                                    proteção de
+                                    encostas e atenuação de desastres; fertilidade e proteção do solo; produção de
+                                    alimentos,
+                                    madeira, fibras, óleos e remédios; além de proporcionar paisagens cênicas e
+                                    preservar um
+                                    patrimônio histórico e cultural imenso.</q></p>
+                        </div>
+                        <div class="project-img">
+                            <img src="img/mata-atlantica.jpg" alt="img">
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Bioma Pantanal</h1>
+                            <h2><a href="https://antigo.mma.gov.br/biomas/pantanal.html">MAIOR PLANÍCIE DE INUDAÇÃO
+                                    CONTINUA DO PLANETA TERRA</a></h2>
+                            <p><q>O bioma Pantanal é considerado uma das maiores extensões úmidas contínuas do planeta.
+                                    Este
+                                    bioma continental é
+                                    considerado o de menor extensão territorial no Brasil, entretanto este dado em nada
+                                    desmerece a exuberante riqueza que o
+                                    referente bioma abriga. A sua área aproximada é 150.355 km² (IBGE,2004), ocupando
+                                    assim
+                                    1,76% da área total do
+                                    território brasileiro. Em seu espaço territorial o bioma, que é uma planície
+                                    aluvial, é
+                                    influenciado por rios que drenam
+                                    a bacia do Alto Paraguai.</q> </p>
+                        </div>
+                        <div class="project-img">
+                            <img src="img/pantanal.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Bioma Pampa</h1>
+                            <h2><a href="https://antigo.mma.gov.br/biomas/pampa.html">UMA DAS ÁREAS DE CAMPOS DE
+                                    TEMPERADOS MAIS IMPORTANTES DO PLANETA</a></h2>
+                            <p><q>O Pampa está restrito ao estado do Rio Grande do Sul. O Pampa é uma das áreas de
+                                    campos
+                                    temperados mais importantes do planeta. or ser um conjunto de ecossistemas muito
+                                    antigos, o
+                                    Pampa apresenta flora e fauna próprias e grande biodiversidade, ainda não
+                                    completamente
+                                    descrita pela ciência. O bioma exibe um imenso patrimônio cultural
+                                    associado à biodiversidade. Em sua paisagem predominam os campos, entremeados por
+                                    capões de
+                                    mata, matas ciliares e banhados.
+                                    A estrutura da vegetação dos campos – se comparada à das florestas e das savanas – é
+                                    mais
+                                    simples e menos exuberante, mas não menos relevante do ponto de vista da
+                                    biodiversidade e
+                                    dos serviços ambientais.</q></p>
+                        </div>
+                        <div class="project-img">
+                            <img src="img/pampa.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div id="footer_">
+                    <footer><p>&copy; <a href="https://github.com/25ribeiro">Github</a> 
+                        <a href="https://www.linkedin.com/in/jo%C3%A3o-ribeiro-455949231/">Linkedin</a></a> &rarr;
+                        Inspiração: <a href="https://www.startse.com/">Tech Academy-Startse</a>&reg;</p></footer>
+                </div>
+            </section>
+        </section>
+    </main>
 </body>
 
 </html>

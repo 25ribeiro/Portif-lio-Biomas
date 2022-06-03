@@ -6,14 +6,29 @@
     box-sizing: border-box;
 }
 
+:root {
+    --green: #172b02;
+    --black: #141414;
+    --keyframe-green: #2cbd2c;
+    --keyframe-blue: #2f2fa5;
+    --keygrame-gold: #ffd700;
+    /* não consegui com o linear-gradient */
+    
+    
+}
+
 html{
     font-size: 10px;
     font-family: 'Poppins', 'Times New Roman', Times, serif ;
     scroll-behavior: smooth;
 }
 
-a{
+a, a:hover *{
     text-decoration: none;
+    color: var(--green);
+    text-decoration: underline;
+    
+    
 }
 img{
     height: 100%;
@@ -38,7 +53,6 @@ p {
 .section-title {
     font-size: 4rem;
     font-weight: 500;
-    color: black;
     margin-bottom: 10px;
     margin-top: 5px;
     text-transform: uppercase;
@@ -46,7 +60,12 @@ p {
     text-align: center;
 }
 
-
+/*footer {  /* não encontrei essa tag sua no html 
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 200;
+}
+*/
 
 /* Seção de apresentação */
 
@@ -57,10 +76,10 @@ nav {
     
 }
 
-nav h1 {
+nav h1 { /* colocado  navegador   */
     font-size: 24px;
     font-weight: 700;
-    color: rgb(23, 43, 2);
+    color: var(--green);
     margin-left: 50px;
 }
 
@@ -70,23 +89,43 @@ nav a {
 }
 
 header {
-    background-image: linear-gradient(rgb(238, 238, 77), rgb(211, 211, 12), rgb(69, 197, 69), rgb(8, 71, 143));
+    background-image: linear-gradient(#dfdf13,#45c545,#08478f);
     height: 50px;
     display: flex;
     align-items: center;
+    background-size: 200% 200%;
+    animation: gradientEffect 4s linear infinite alternate;
+    
 }
 
-a, a:hover {
-    color: #20221e;
-    text-decoration:solid;
+#footer_ {
+    align-items: center;
+    display: flex;
+    background-image: linear-gradient(rgb(238, 238, 77), rgb(211, 211, 12), rgb(69, 197, 69), rgb(8, 71, 143));
+    justify-content: center;
+    background-size: 200% 200%;
+    animation: gradientEffect 4s linear infinite alternate;
 }
 
-.portfolio-contact-container {
+#footer_ a{
+    margin: auto;
+}
+
+/* a, a:hover {
+    color: #1e221f;
+    text-decoration: underline;
+
+} */
+
+.portfolio-contact-container {/* alteração do nom da classe */
     display: flex;
     align-items: center;
     margin-right: 50px;
+    
 }
-
+#contact { /* criada pra ajuste */
+    margin-right: 5px;
+}
 
 #presentation {
     background-image: url(img/faunaamazonica.jpg); 
@@ -100,7 +139,7 @@ a, a:hover {
     width: auto;
     font-size: 5rem;
     position:relative;
-    color: transparent; /*/*/
+    color: transparent; 
     animation: text_reveal .5s ease forwards;
     animation-delay: 1.5s;
 }
@@ -108,6 +147,7 @@ a, a:hover {
     animation-delay: .8s;
 }
 #presentation h1:nth-child(2){
+    animation: text_reveal_one .5s ease forwards; 
     animation-delay: 1.8s;
 }
 #presentation h1:nth-child(3){
@@ -117,9 +157,10 @@ a, a:hover {
 #presentation .cta{
     display:flex;
     padding: 10px 30px;
-    color: gold;
+    text-align: center;
+    color: var(--black);
     background-color: transparent;
-    border: 2px solid gold;
+    border: 2px solid var(--black);
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -128,22 +169,30 @@ a, a:hover {
     transition-property: background-color, color;
 
 }
-#presentation .cta:hover{
-    color: white;
-    font-weight: 500;
-    background-color: gold;
+.cta {
+    border-radius: 8px;
+    left: 100%;
+    background-image: linear-gradient(#efef4e, #d3d30c, #45c545, #08478f);
+    background-size: 200% 200%;
+    animation: gradientEffect 6s linear infinite alternate;
 }
-#presentation span{
+
+#presentation .cta:hover{
+    color: var(--black);
+    font-weight: 500;
+    animation: gradientEffect 2s linear infinite alternate;
+}
+.presentation-container{
     position:relative;
-    top: 10px;
-    left: 10px;
+    top: 0px;
+    left: 0px;
     height: 100%;
-    width: 10%;
+    width: 0px;
     animation: text_reveal_box 1s ease;
     animation-delay: .5s;
     background-color: transparent;
 }
-#presentation h1:nth-child(1) span{
+#presentation span:nth-child(1) h1{
     animation-delay: .5s;
 }
 #presentation h1:nth-child(2) span{
@@ -159,7 +208,7 @@ a, a:hover {
     top: 0;
     height:100%;
     width: 100%;
-    background-color:black;
+    background-color:var(--green);
     opacity: 0.5;
     z-index: -1;
 }
@@ -174,7 +223,8 @@ a, a:hover {
 }
 
 #portfolio .portfolio-header h1{
-    margin-bottom: 40px;
+    margin-bottom: 5px;
+    background-image: linear-gradient(#efef4e, #d3d30c, #45c545, #08478f);
 }
 #portfolio .all-projects {
     display: flex;
@@ -201,8 +251,11 @@ a, a:hover {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    /* criada cor gradiente e animação */
     background-image: linear-gradient(70deg, #d3d30c, #45c545, #08478f 100%);
     color:#20221e;
+    background-size: 200% 200%;
+    animation: gradientEffect_one 6s linear infinite alternate;
 }
 
 #portfolio .project-info h1{
@@ -248,12 +301,17 @@ a, a:hover {
 
 @keyframes text_reveal{
     100%{
-        color: white;
+        color: var(--keyframe-green);
+    }
+}
+@keyframes text_reveal_one{
+    100%{
+        color: var(--keyframe-blue);
     }
 }
 @keyframes text_reveal_name{
     100%{
-        color: gold;
+        color: var(--keygrame-gold);
         font-weight: 500px;
     }
 }
@@ -267,6 +325,16 @@ a, a:hover {
         width: 0;
         left:100%
     }
+}
+/* criada pra ajuste */
+@keyframes gradientEffect {
+    from { background-position: 0 0; }
+    to { background-position: 100% 100%;}
+}
+
+@keyframes gradientEffect_one {
+    from { background-position: 0 0;}
+    to {background-position: 100% 100%;}
 }
 
 /* Media Query */
