@@ -78,10 +78,11 @@ nav {
 }
 
 nav h1 { /* colocado  navegador   */
-    font-size: 24px;
+    font-size: 60px;
     font-weight: 700;
     color: var(--green);
-    margin-left: 50px;
+    margin-left: 100px;
+    letter-spacing: 1px;
     
 }
 
@@ -139,7 +140,7 @@ header {
 #presentation h1{
     display: flex;
     width: auto;
-    font-size: 5rem;
+    font-size: 10rem;
     position:relative;
     color: transparent; 
     animation: text_reveal .5s ease forwards;
@@ -158,12 +159,12 @@ header {
 }
 #presentation .cta{
     display:flex;
-    padding: 10px 30px;
-    text-align: center;
+    padding: 10px 80px;
+    text-align: justify;
     color: var(--black);
     background-color: transparent;
     border: 2px solid var(--black);
-    font-size: 2rem;
+    font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
     margin-top: 10px;
@@ -173,7 +174,7 @@ header {
 }
 .cta {
     border-radius: 8px;
-    left: 100%;
+    text-align: center;
     background-image: var(--gradiente);
     background-size: 200% 200%;
     animation: gradientEffect 6s linear infinite alternate;
@@ -182,7 +183,7 @@ header {
 
 #presentation .cta:hover{
     color: var(--black);
-    font-weight: 500;
+    font-weight: 700;
     animation: gradientEffect 2s linear infinite alternate;
     transform: translateY(-7px)
     
