@@ -37,7 +37,7 @@ img{
     object-fit: cover;   
 }
 p {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     margin-top: 5px;
     line-height: 2.5rem;
     font-weight: 200;
@@ -78,7 +78,7 @@ nav {
 }
 
 nav h1 { /* colocado  navegador   */
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 700;
     color: var(--green);
     margin-left: 100px;
@@ -87,7 +87,7 @@ nav h1 { /* colocado  navegador   */
 }
 
 nav a {
-    font-size: 12px;
+    font-size: 20px;
     font-weight: 400;
 }
 
@@ -363,5 +363,19 @@ header {
     }
     #portfolio .project-item:nth-child(even) {
         flex-direction: row-reverse;
+    }
+}
+@media (min-width: 390px) {
+     header{
+        flex-direction: row;
+        height: 100%;  
+             
+    }
+    nav a {
+        width: 50px;        
+        height: 100%;
+    }
+    nav h1 {
+        margin-left: 10px;
     }
 }
