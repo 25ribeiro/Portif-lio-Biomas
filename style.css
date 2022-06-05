@@ -12,6 +12,7 @@
     --keyframe-green: #2cbd2c;
     --keyframe-blue: #2f2fa5;
     --keygrame-gold: #ffd700;
+    --gradiente: linear-gradient(#dfdf13,#45c545,#08478f);
     /* não consegui com o linear-gradient */
     
     
@@ -26,7 +27,7 @@ html{
 a, a:hover *{
     text-decoration: none;
     color: var(--green);
-    text-decoration: underline;
+    
     
     
 }
@@ -81,6 +82,7 @@ nav h1 { /* colocado  navegador   */
     font-weight: 700;
     color: var(--green);
     margin-left: 50px;
+    
 }
 
 nav a {
@@ -89,7 +91,7 @@ nav a {
 }
 
 header {
-    background-image: linear-gradient(#dfdf13,#45c545,#08478f);
+    background-image: var(--gradiente);
     height: 50px;
     display: flex;
     align-items: center;
@@ -101,7 +103,7 @@ header {
 #footer_ {
     align-items: center;
     display: flex;
-    background-image: linear-gradient(rgb(238, 238, 77), rgb(211, 211, 12), rgb(69, 197, 69), rgb(8, 71, 143));
+    background-image: var(--gradiente);
     justify-content: center;
     background-size: 200% 200%;
     animation: gradientEffect 4s linear infinite alternate;
@@ -166,21 +168,25 @@ header {
     letter-spacing: .1rem;
     margin-top: 10px;
     transition: .5s ease;
-    transition-property: background-color, color;
+    
 
 }
 .cta {
     border-radius: 8px;
     left: 100%;
-    background-image: linear-gradient(#efef4e, #d3d30c, #45c545, #08478f);
+    background-image: var(--gradiente);
     background-size: 200% 200%;
     animation: gradientEffect 6s linear infinite alternate;
+    
 }
 
 #presentation .cta:hover{
     color: var(--black);
     font-weight: 500;
     animation: gradientEffect 2s linear infinite alternate;
+    transform: translateY(-7px)
+    
+    
 }
 .presentation-container{
     position:relative;
@@ -192,7 +198,7 @@ header {
     animation-delay: .5s;
     background-color: transparent;
 }
-#presentation span:nth-child(1) h1{
+#presentation h1:nth-child(1) span{
     animation-delay: .5s;
 }
 #presentation h1:nth-child(2) span{
@@ -224,7 +230,7 @@ header {
 
 #portfolio .portfolio-header h1{
     margin-bottom: 5px;
-    background-image: linear-gradient(#efef4e, #d3d30c, #45c545, #08478f);
+    background-image: var(--gradiente);
 }
 #portfolio .all-projects {
     display: flex;
@@ -270,7 +276,8 @@ header {
 }
 
 #portfolio .project-info p {
-    font-weight: 700;
+    font-weight: 700; 
+    cursor: pointer; 
 }
 
 #portfolio .project-img {
@@ -326,6 +333,7 @@ header {
         left:100%
     }
 }
+
 /* criada pra ajuste */
 @keyframes gradientEffect {
     from { background-position: 0 0; }
@@ -337,7 +345,7 @@ header {
     to {background-position: 100% 100%;}
 }
 
-/* Media Query */
+/* REPONSIVIDADE */
 @media only screen and (min-width: 768px) {
     #portfolio .project-item {
         flex-direction: row;
@@ -355,6 +363,4 @@ header {
     #portfolio .project-item:nth-child(even) {
         flex-direction: row-reverse;
     }
-
-
 }
